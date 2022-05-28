@@ -1,0 +1,5 @@
+scikit-learn==1.1.1
+pandas==1.4.2
+joblib==1.1.0
+flask==2.1.2
+redis==4.3.1

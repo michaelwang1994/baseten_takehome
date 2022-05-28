@@ -1,0 +1,7 @@
+.cell {
+    display: inline-block;
+}
+
+.cell label {
+    display: block;
+}

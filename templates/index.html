@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Input Page</title>
+   </head>
+   <body>
+      <form action='/' method='POST'>
+         <p>Enter Flower Stats</p>
+         <p>Sepal Length in cm</p><input type="number" name="sep_ln" value="{{ sep_ln }}" step="0.01"/></p>
+         <p>Sepal Width  in cm</p><input type="number" name="sep_wd" value="{{ sep_wd }}" step="0.01"/></p>
+         <p>Petal Length in cm</p><input type="number" name="pet_ln" value="{{ pet_ln }}" step="0.01"/></p>
+         <p>Petal Width in cm</p><input type="number" name="pet_wd" value="{{ pet_wd }}" step="0.01"/></p>
+         <p><input type = "submit" value = "submit" /></p>
+         <p>Prediction</p><img src="{{ prediction_image }}" alt="Prediction Image" onerror="this.onerror=null; this.remove();"></p>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+<html>
+   <head>
+      <title>Input Page</title>
+   </head>
+   <body>
+      <form action='/invocations' method='POST'>
+          <div>
+             <div class="cell">
+                <p>Sepal Length in cm [min]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="sep_ln_min" value="{{ sep_ln_min }}" step="0.01">
+             </div>
+             <div class="cell">
+               <p>[max]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="sep_ln_max" value="{{ sep_ln_max }}" step="0.01">
+             </div>
+          </div>
+          <div>
+             <div class="cell">
+                <p>Sepal Width in cm [min]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="sep_wd_min" value="{{ sep_wd_min }}" step="0.01">
+             </div>
+             <div class="cell">
+               <p>[max]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="sep_wd_max" value="{{ sep_wd_max }}" step="0.01">
+             </div>
+          </div>
+
+          <div>
+             <div class="cell">
+                <p>Petal Length in cm [min]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="pet_ln_min" value="{{ pet_ln_min }}" step="0.01">
+             </div>
+             <div class="cell">
+               <p>[max]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="pet_ln_max" value="{{ pet_ln_max }}" step="0.01">
+             </div>
+          </div>
+
+          <div>
+             <div class="cell">
+                <p>Petal Width in cm [min]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="pet_wd_min" value="{{ pet_wd_min }}" step="0.01">
+             </div>
+             <div class="cell">
+               <p>[max]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="pet_wd_max" value="{{ pet_wd_max }}" step="0.01">
+             </div>
+          </div>
+
+          <div>
+             <div class="cell">
+                <p>Prediction Value [min]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="prediction_min" value="{{ prediction_min }}" step="0.01">
+             </div>
+             <div class="cell">
+               <p>[max]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="prediction_max" value="{{ prediction_max }}" step="0.01">
+             </div>
+          </div>
+
+          <div>
+             <div class="cell">
+                <p>Timestamp Value [min]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="timestamp_min" value="{{ timestamp_min }}" step="0.01">
+             </div>
+             <div class="cell">
+               <p>[max]</p>
+             </div>
+             <div class="cell">
+               <input type="number" name="timestamp_max" value="{{ timestamp_max }}" step="0.01">
+             </div>
+          </div>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+   </body>
+</html>
